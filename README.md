@@ -29,6 +29,49 @@ In this project, I utilized the power of Python and the tkinter library for crea
 - Click "Show Data" to reveal the hidden message.
 
 
+### Features:
+- compression of embedded data
+- encryption of embedded data
+- embedding of a checksum to verify the integrity of the extracted data
+- support for JPEG, BMP, WAV and AU files
+
+# Hide text/files in image using Kali linux:
+Steghide is steganography program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
+
+
+ 
+### Install Steghide:
+      sudo apt update
+     sudo apt install steghide
+
+Prepare the Files:
+- Choose the image file you want to use (e.g., cover.jpg).
+
+- Prepare the file you want to hide (e.g., secret.txt).
+
+### Embed the File Inside the Image:
+
+     steghide embed -cf cover.jpg -ef secret.txt
+
+It will prompt you to set a passphrase. This secures the hidden data.
+
+### Verify the Embedding (Optional):
+
+- To check if data is embedded:
+
+       steghide info cover.jpg
+
+### Extract the Hidden File Later:
+
+      steghide extract -sf cover.jpg
+
+Enter the passphrase to retrieve the hidden file.
+
+### Result:
+
+The file secret.txt will be extracted in the current directory.
+
+
 
 
 
