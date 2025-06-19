@@ -35,13 +35,19 @@ In this project, I utilized the power of Python and the tkinter library for crea
 - embedding of a checksum to verify the integrity of the extracted data
 - support for JPEG, BMP, WAV and AU files
 
+### Install Pillow (for image processing)
+
+    pip install pillow
+
+https://github.com/user-attachments/assets/fd0c1f96-7170-4886-b1a3-4cc471a3018f
+
+
 # Hide text/files in image using Kali linux:
 Steghide is steganography program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
 
-
  
 ### Install Steghide:
- 
+     
      sudo apt install steghide
   
  ![stegphide install](https://github.com/user-attachments/assets/e50d639a-6f1f-433e-8ae4-d0a81d911dd9)
@@ -49,7 +55,7 @@ Steghide is steganography program which hides bits of a data file in some of the
 Prepare the Files:
 - Choose the image file you want to use (e.g., cover.jpg).
 
-- Prepare the file you want to hide (e.g., secret.txt).
+- Prepare the file you want to hide (e.g., secret.txt/ file.pdf/ audio.mp3).
 
 ### Embed the File Inside the Image:
 
