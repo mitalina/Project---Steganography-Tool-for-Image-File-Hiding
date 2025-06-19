@@ -41,8 +41,10 @@ Steghide is steganography program which hides bits of a data file in some of the
 
  
 ### Install Steghide:
-      sudo apt update
+ 
      sudo apt install steghide
+  
+ ![stegphide install](https://github.com/user-attachments/assets/e50d639a-6f1f-433e-8ae4-d0a81d911dd9)
 
 Prepare the Files:
 - Choose the image file you want to use (e.g., cover.jpg).
@@ -53,6 +55,8 @@ Prepare the Files:
 
      steghide embed -cf cover.jpg -ef secret.txt
 
+![stegphide2](https://github.com/user-attachments/assets/253021f6-52b4-409a-b4c7-7e3beb3df6a2)
+
 It will prompt you to set a passphrase. This secures the hidden data.
 
 ### Verify the Embedding (Optional):
@@ -61,9 +65,13 @@ It will prompt you to set a passphrase. This secures the hidden data.
 
        steghide info cover.jpg
 
+![stegphide3](https://github.com/user-attachments/assets/6bc3668b-d895-4ca5-9ecb-299fca86f493)
+
 ### Extract the Hidden File Later:
 
       steghide extract -sf cover.jpg
+
+![steghide4](https://github.com/user-attachments/assets/4a47c99e-64dc-4c64-80e0-58f782a34e64)
 
 Enter the passphrase to retrieve the hidden file.
 
